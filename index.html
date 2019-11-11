@@ -54,20 +54,35 @@
     <div class="container mt-4">
       <h1 class="text-light h5">Things to Do:</h1>
       <div class="row" id="toDoContainer">
-
+        <div class='mb-2 col-md-12'>
+          <p class='mb-2 mt-2 text-center text-light border border-light p-2'><i class='far fa-thumbs-up mr-4'></i>Thumbs up - theres nothing to do!</p>
+        </div>
+        <div class='mb-2 col-md-12'>
+          <div class='alert alert-primary mb-1'>
+            <p class='mb-0'><i class='far fa-circle mr-4'></i>Get this done!</p>
+          </div>
+        </div>
       </div>
       <h1 class="text-light h5">Completed Items:</h1>
       <div class="row" id="completedContainer">
+        <div class='mb-2 col-md-12'>
+          <p class='mb-2 mt-2 text-center text-light border border-light p-2'><i class='far fa-hourglass mr-4'></i>Times ticking...better get things done</p>
+        </div>
+        <div class='mb-2 col-md-12'>
+          <div class='alert alert-success mb-1'>
+            <p class='mb-0'><i class='far fa-circle mr-4'></i>This is done!</p>
+          </div>
         </div>
       </div>
+    </div>
     </div>
 
     <div class="container mt-4">
       <h1 class="text-light h5">Add a To Do</h1>
       <div class="row">
         <div class="col-md-12">
-            <input type="text" class="form-control" id="newToDoItem" placeholder="Engage Hyperdrive Systems">
-            <button id="form-submit-button" type="submit" class="btn btn-primary mt-3" onclick="saveItem()">Save Item</button>
+          <input type="text" class="form-control" id="newToDoItem" placeholder="Engage Hyperdrive Systems">
+          <button id="form-submit-button" type="submit" class="btn btn-primary mt-3" onclick="saveItem()">Save Item</button>
           <button class="btn btn-primary mt-3" onclick="deleteCompleted();">Delete Completed</button>
         </div>
       </div>
